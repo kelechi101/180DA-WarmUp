@@ -1,8 +1,11 @@
 """
 References: 
 find dominant colors on an image:https://code.likeagirl.io/finding-dominant-colour-on-an-image-b4e075f98097
+Changed cv2 to cv 
 kmeans:https://github.com/opencv/opencv/blob/master/samples/python/kmeans.py
-BoundingBox: https://answers.opencv.org/question/200861/drawing-a-rectangle-around-a-color-as-shown/?fbclid=IwAR3_P7pmzYS7Mw8sSBtK5d7szhg-RNjCkZzlrln65rmqrbxqHm10JTxzG1I%22%22%22   
+Changed cv2 to cv 
+BoundingBox: https://answers.opencv.org/question/200861/drawing-a-rectangle-around-a-color-as-shown/?fbclid=IwAR3_P7pmzYS7Mw8sSBtK5d7szhg-RNjCkZzlrln65rmqrbxqHm10JTxzG1I%22%22%22  
+Changed cv2 to cv 
 """
 import cv2 as cv
 import numpy as np
@@ -76,3 +79,4 @@ while(1):
     k = cv.waitKey(5) & 0xFF
     if k == 27:
         break
+cv.destroyAllWindows()
