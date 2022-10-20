@@ -28,8 +28,7 @@ client.on_disconnect = on_disconnect
 client.on_message = on_message
 # 2. connect to a broker using one of the connect*() functions. 
 client.connect_async('test.mosquitto.org')
-# 3. call one of the loop*() functions to maintain network traffic flow with the 
-broker. 
+# 3. call one of the loop*() functions to maintain network traffic flow with the broker. 
 client.loop_start()
 # 4. use subscribe() to subscribe to a topic and receive messages. 
 # 5. use publish() to publish messages to the broker. 
